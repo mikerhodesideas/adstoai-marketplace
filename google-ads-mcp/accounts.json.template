@@ -1,0 +1,16 @@
+{
+  "example_account_1": {
+    "id": "1234567890",
+    "aliases": ["Account1", "Main Account"],
+    "name": "Example Account Name",
+    "currency": "USD",
+    "type": "client"
+  },
+  "example_mcc": {
+    "id": "9876543210",
+    "aliases": ["MCC", "Manager Account"],
+    "name": "My MCC Account",
+    "currency": "USD",
+    "type": "manager"
+  }
+}

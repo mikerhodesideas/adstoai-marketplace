@@ -1,0 +1,16 @@
+{
+  "name": "adstoai-marketplace",
+  "description": "Claude Code plugins for Google Ads professionals. Tools for campaign analysis, reporting, and automation through MCP integration.",
+  "owner": {
+    "name": "Mike Rhodes",
+    "email": "mike@8020agent.com",
+    "url": "https://8020agent.com"
+  },
+  "plugins": [
+    {
+      "name": "google-ads-mcp",
+      "source": "./google-ads-mcp",
+      "description": "Agent Skills for Google Ads MCP: account management, campaign performance analysis, and GAQL query building"
+    }
+  ]
+}
