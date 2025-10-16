@@ -4,9 +4,20 @@ Claude Code plugin for working with Google Ads data through the Model Context Pr
 
 ## Features
 
+### Agents
+
+**Black Friday Campaign Preparation** - Multi-step workflow agent that prepares your Google Ads campaigns for Black Friday, Cyber Monday, and holiday shopping season:
+- Year-over-year performance analysis
+- Budget scaling recommendations based on historical ROI
+- Campaign readiness assessment
+- Seasonal optimization checklist
+- Event monitoring plan
+
+**Usage:** "Prepare my account for Black Friday" or "Get ready for BFCM"
+
 ### Agent Skills
 
-This plugin includes three powerful Agent Skills that activate automatically when working with Google Ads:
+This plugin includes four powerful Agent Skills that activate automatically when working with Google Ads:
 
 #### 1. Getting Google Ads Account Information
 - Retrieves account details (name, ID, currency, timezone)
@@ -23,6 +34,15 @@ This plugin includes three powerful Agent Skills that activate automatically whe
 - Provides query templates for common scenarios
 - Accesses field documentation when needed
 
+#### 4. Calculating Budget Pacing
+- Daily and monthly budget pacing analysis
+- Over/under-spending alerts
+- End-of-period spend forecasting
+- Campaign-level and account-level pacing
+- Actionable budget adjustment recommendations
+
+**Usage:** "How is my budget pacing?" or "Will I hit my monthly budget?"
+
 ## Prerequisites
 
 You must have the Google Ads MCP server configured. See the [complete setup guide](https://github.com/google-marketing-solutions/google_ads_mcp) for:
@@ -36,7 +56,7 @@ You must have the Google Ads MCP server configured. See the [complete setup guid
 ### Add the Marketplace
 
 ```bash
-/plugin marketplace add mikerhodes/adstoai-marketplace
+/plugin marketplace add mikerhodesideas/adstoai-marketplace
 ```
 
 ### Install the Plugin
@@ -98,23 +118,38 @@ Add to `~/.claude/mcp_settings.json`:
 
 ## Usage Examples
 
-Once installed, the skills work automatically:
+Once installed, the agent and skills work automatically:
 
-### Account Information
+### Black Friday Preparation (Agent)
+```
+"Prepare my account for Black Friday"
+"Get ready for BFCM 2024"
+"What should I change before the holiday shopping season?"
+```
+
+### Budget Pacing (Skill)
+```
+"How is my budget pacing this month?"
+"Will I hit my monthly budget?"
+"Which campaigns are overspending?"
+"Am I on track with my spending?"
+```
+
+### Account Information (Skill)
 ```
 "What accounts do I have access to?"
 "Tell me about the MCC account structure"
 "Show me client accounts under my MCC"
 ```
 
-### Campaign Performance
+### Campaign Performance (Skill)
 ```
 "Show me campaign performance for the last 30 days"
 "What's the cost and conversion data for my campaigns?"
 "Which campaigns have the best CTR?"
 ```
 
-### GAQL Query Building
+### GAQL Query Building (Skill)
 ```
 "Build a query to get keyword performance"
 "Show me how to query ad group metrics"
@@ -155,12 +190,16 @@ The skills automatically handle Google Ads data formatting:
 google-ads-mcp/
 ├── .claude-plugin/
 │   └── plugin.json                          # Plugin metadata
+├── agents/
+│   └── black-friday-prep.md                 # Black Friday preparation agent
 ├── skills/
 │   ├── google-ads-account-info/             # Account structure skill
 │   │   └── SKILL.md
 │   ├── google-ads-campaign-performance/     # Campaign metrics skill
 │   │   └── SKILL.md
-│   └── gaql-query-builder/                  # Query building skill
+│   ├── gaql-query-builder/                  # Query building skill
+│   │   └── SKILL.md
+│   └── budget-pacing/                       # Budget pacing skill
 │       └── SKILL.md
 ├── accounts.json.template                    # Template for account aliases
 └── README.md                                 # This file

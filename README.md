@@ -22,7 +22,7 @@ Agent Skills for working with Google Ads data through the Model Context Protocol
 
 1. **Add this marketplace to Claude Code:**
    ```bash
-   /plugin marketplace add mikerhodes/adstoai-marketplace
+   /plugin marketplace add mikerhodesideas/adstoai-marketplace
    ```
 
 2. **Install the Google Ads MCP plugin:**
@@ -89,7 +89,7 @@ If you're part of the **Ads to AI Community**, here's the recommended configurat
    - Add to `.claude/settings.json` in your repository:
    ```json
    {
-     "marketplaces": ["mikerhodes/adstoai-marketplace"],
+     "marketplaces": ["mikerhodesideas/adstoai-marketplace"],
      "plugins": ["google-ads-mcp@adstoai-marketplace"]
    }
    ```
@@ -109,7 +109,7 @@ To test changes locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/mikerhodes/adstoai-marketplace.git
+git clone https://github.com/mikerhodesideas/adstoai-marketplace.git
 cd adstoai-marketplace
 
 # Add as local marketplace
@@ -129,7 +129,7 @@ cd adstoai-marketplace
 
 ## Support
 
-- **Plugin Issues:** [Open an issue](https://github.com/mikerhodes/adstoai-marketplace/issues)
+- **Plugin Issues:** [Open an issue](https://github.com/mikerhodesideas/adstoai-marketplace/issues)
 - **MCP Server Issues:** [google_ads_mcp repository](https://github.com/google-marketing-solutions/google_ads_mcp)
 - **Community Support:** [Ads to AI Community](https://8020agent.com)
 
