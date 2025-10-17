@@ -7,7 +7,7 @@ Official plugin marketplace for Ads2AI community members - Google Ads automation
 ### Add the Marketplace
 
 ```bash
-/plugin marketplace add https://github.com/mikerhodes/ads2ai-marketplace
+/plugin marketplace add https://github.com/mikerhodesideas/ads2ai-marketplace
 ```
 
 ### Install Plugins
