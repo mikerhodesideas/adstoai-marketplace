@@ -4,17 +4,21 @@ Official plugin marketplace for [AdstoAI](https://8020agent.com/ai) members - Go
 
 ## Quick Start
 
-### Add the Marketplace
+**Two steps required:**
+
+### 1. Add the Marketplace
 
 ```bash
 /plugin marketplace add https://github.com/mikerhodesideas/adstoai-marketplace
 ```
 
-### Install Plugins
+### 2. Install the Plugin
 
 ```bash
 /plugin install google-ads-mcp
 ```
+
+That's it! The plugin includes skills, commands, and agents for working with Google Ads data.
 
 ## Available Plugins
 
