@@ -1,6 +1,6 @@
-# Ads2AI Marketplace
+# AdstoAI Marketplace
 
-Official plugin marketplace for Ads2AI community members - Google Ads automation and AI tools for Claude Code.
+Official plugin marketplace for AdstoAI community members - Google Ads automation and AI tools for Claude Code.
 
 ## Quick Start
 
@@ -76,9 +76,9 @@ Ask questions like:
 
 ## Support
 
-- **Community:** Ads2AI Discord
+- **Community:** AdstoAI Discord
 - **Documentation:** [8020agent.com](https://8020agent.com)
-- **Issues:** [GitHub Issues](https://github.com/mikerhodes/ads2ai-marketplace/issues)
+- **Issues:** [GitHub Issues](https://github.com/mikerhodesideas/adstoai-marketplace/issues)
 
 ## For Plugin Developers
 
