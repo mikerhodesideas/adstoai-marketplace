@@ -1,144 +1,90 @@
-# Ads to AI Marketplace
+# Ads2AI Marketplace
 
-Claude Code plugin marketplace for Google Ads professionals. Access powerful Agent Skills and tools for campaign analysis, reporting, and automation.
+Official plugin marketplace for Ads2AI community members - Google Ads automation and AI tools for Claude Code.
+
+## Quick Start
+
+### Add the Marketplace
+
+```bash
+/plugin marketplace add https://github.com/mikerhodes/ads2ai-marketplace
+```
+
+### Install Plugins
+
+```bash
+/plugin install google-ads-mcp
+```
 
 ## Available Plugins
 
-### google-ads-mcp
+### Google Ads MCP - Complete Google Ads Integration
 
-Agent Skills for working with Google Ads data through the Model Context Protocol (MCP).
+The most comprehensive Google Ads plugin for Claude Code - includes MCP server, commands, skills, and agents for complete Google Ads automation.
 
-**Features:**
-- Account information and MCC hierarchy navigation
-- Campaign performance analysis with automatic data formatting
-- GAQL query building assistance
-- Account alias support for easy reference
+**What's Included:**
 
-**[View Plugin Details →](./google-ads-mcp/README.md)**
+**🔌 MCP Server (Bundled)**
+- Direct Google Ads API access via MCP tools
+- Execute GAQL queries with natural language
+- Access account hierarchy and structure
+- Real-time performance data
 
-## Installation
+**⚡ Commands (3)**
+- `/setup-google-ads-credentials` - Interactive credential setup
+- `/test-google-ads-connection` - Verify API connection
+- `/setup-account-aliases` - Configure friendly account names (e.g., "SSC" instead of "9882330267")
 
-### Quick Start
+**🎯 Agent Skills (4)**
+- **Account Info** - Query account structure, MCC hierarchies, settings
+- **Campaign Performance** - Analyze metrics, trends, and performance data
+- **GAQL Query Builder** - Construct complex queries with natural language
+- **Account Manager** - Auto-update aliases and manage account mappings
 
-1. **Add this marketplace to Claude Code:**
-   ```bash
-   /plugin marketplace add mikerhodesideas/adstoai-marketplace
-   ```
+**💬 Natural Language Queries**
+Ask questions like:
+- "Show campaign performance for Scottish Shutters last 30 days"
+- "Which campaigns have the highest conversion rate?"
+- "Compare spend between my accounts this month"
+- "What's my total ad spend for Q4?"
 
-2. **Install the Google Ads MCP plugin:**
-   ```bash
-   /plugin install google-ads-mcp@adstoai-marketplace
-   ```
-
-3. **Restart Claude Code** to activate the skills
-
-### Prerequisites
-
-To use the Google Ads MCP plugin, you need:
-
-1. **Google Ads MCP Server** configured and running
-   - Follow the [complete setup guide](https://github.com/google-marketing-solutions/google_ads_mcp)
-   - Requires Google Cloud Platform OAuth credentials
-   - Requires Google Ads API developer token
-
-2. **MCP Server Configuration** in `~/.claude/mcp_settings.json`:
-   ```json
-   {
-     "mcpServers": {
-       "GoogleAds": {
-         "command": "uv",
-         "args": [
-           "run",
-           "--directory",
-           "/path/to/google_ads_mcp",
-           "-m",
-           "ads_mcp.server"
-         ],
-         "cwd": "/path/to/google_ads_mcp",
-         "timeout": 30000
-       }
-     }
-   }
-   ```
-
-## Usage
-
-Once installed, the Google Ads skills activate automatically when you work with Google Ads data:
-
-```
-"Show me campaign performance for the last 30 days"
-"What accounts do I have access to?"
-"Build a GAQL query for keyword metrics"
-"Tell me about my MCC structure"
-```
-
-## For Community Members
-
-### Recommended Setup
-
-If you're part of the **Ads to AI Community**, here's the recommended configuration:
-
-1. **Install the marketplace and plugin** (see Quick Start above)
-
-2. **Add account aliases** to your projects:
-   - Copy `google-ads-mcp/accounts.json.template` to `.claude/accounts.json` in your project
-   - Update with your Google Ads account details
-   - Now you can reference accounts by name instead of ID
-
-3. **Configure team projects** with the plugin:
-   - Add to `.claude/settings.json` in your repository:
-   ```json
-   {
-     "marketplaces": ["mikerhodesideas/adstoai-marketplace"],
-     "plugins": ["google-ads-mcp@adstoai-marketplace"]
-   }
-   ```
-   - Team members automatically get the plugin when they trust the folder
-
-### Community Resources
-
-- [8020agent.com](https://8020agent.com) - Free Google Ads automation tool
-- [Ads to AI Community](https://8020agent.com) - Join the community (€799/year)
-- [Google Ads Scripts](https://8020agent.com/scripts) - Performance Max scripts and more
-
-## Development & Contribution
-
-### Local Testing
-
-To test changes locally:
-
+**Quick Setup:**
 ```bash
-# Clone the repository
-git clone https://github.com/mikerhodesideas/adstoai-marketplace.git
-cd adstoai-marketplace
+# Install plugin (includes MCP server, commands, and skills)
+/plugin install google-ads-mcp
 
-# Add as local marketplace
-/plugin marketplace add ./adstoai-marketplace
+# Add your Google Ads credentials
+/setup-google-ads-credentials
 
-# Install the plugin
-/plugin install google-ads-mcp@adstoai-marketplace
+# Test the connection
+/test-google-ads-connection
+
+# Start querying
+"List my Google Ads accounts"
+"Show me top performing campaigns this month"
 ```
 
-### Adding New Plugins
+**Setup Time:** ~20 minutes (15 min for GCP OAuth, 5 min for plugin)
 
-1. Create a new directory in the marketplace root
-2. Add `.claude-plugin/plugin.json` with metadata
-3. Add your plugin components (skills, commands, agents, hooks)
-4. Update `.claude-plugin/marketplace.json` to include the new plugin
-5. Submit a pull request
+[Full Documentation →](./plugins/google-ads-mcp/README.md)
+
+## Coming Soon
+
+- **Scripts Helper** - Google Ads Scripts management tools
+- **Reporting Tools** - Custom report builders
+- **Campaign Optimizer** - AI-powered optimization suggestions
 
 ## Support
 
-- **Plugin Issues:** [Open an issue](https://github.com/mikerhodesideas/adstoai-marketplace/issues)
-- **MCP Server Issues:** [google_ads_mcp repository](https://github.com/google-marketing-solutions/google_ads_mcp)
-- **Community Support:** [Ads to AI Community](https://8020agent.com)
+- **Community:** Ads2AI Discord
+- **Documentation:** [8020agent.com](https://8020agent.com)
+- **Issues:** [GitHub Issues](https://github.com/mikerhodes/ads2ai-marketplace/issues)
 
-## License
+## For Plugin Developers
 
-Apache 2.0
+Want to contribute a plugin? Check out the [Plugin Development Guide](./CONTRIBUTING.md).
 
-## About
+---
 
-Created by [Mike Rhodes](https://mikerhodes.com.au) for the Google Ads community.
-
-Part of the [Ads to AI](https://8020agent.com) ecosystem helping Google Ads professionals leverage AI and automation.
+**Maintained by:** Mike Rhodes | [8020agent.com](https://8020agent.com)
+**License:** Apache 2.0
