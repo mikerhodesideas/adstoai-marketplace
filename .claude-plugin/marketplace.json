@@ -21,7 +21,7 @@
       },
       "homepage": "https://github.com/mikerhodesideas/adstoai-marketplace",
       "tags": ["google-ads", "analytics", "marketing", "ppc", "advertising", "mcp", "reporting"],
-      "source": "./plugins/google-ads-mcp"
+      "source": "./google-ads-mcp"
     }
   ]
 }
