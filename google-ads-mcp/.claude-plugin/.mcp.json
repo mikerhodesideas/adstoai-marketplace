@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "google-ads": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "{{PLUGIN_DIR}}/google_ads_mcp",
+        "-m",
+        "ads_mcp.server"
+      ],
+      "cwd": "{{PLUGIN_DIR}}/google_ads_mcp",
+      "timeout": 30000,
+      "env": {
+        "GOOGLE_ADS_CREDENTIALS": "{{PLUGIN_DIR}}/google_ads_mcp/google-ads.yaml"
+      }
+    }
+  }
+}

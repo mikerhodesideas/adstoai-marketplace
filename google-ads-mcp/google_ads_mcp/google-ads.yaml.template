@@ -1,0 +1,22 @@
+# Google Ads API Configuration Template
+# Copy this file to google-ads.yaml and fill in your credentials
+# See: https://developers.google.com/google-ads/api/docs/oauth/cloud-project
+
+# OAuth2 Client ID from Google Cloud Console
+client_id: YOUR_CLIENT_ID
+
+# OAuth2 Client Secret from Google Cloud Console
+client_secret: YOUR_CLIENT_SECRET
+
+# OAuth2 Refresh Token (generate using the authentication script)
+# Run: https://github.com/googleads/google-ads-python/blob/main/examples/authentication/generate_user_credentials.py
+refresh_token: YOUR_REFRESH_TOKEN
+
+# Developer token from Google Ads API Center
+# Apply at: https://ads.google.com/aw/apicenter
+developer_token: YOUR_DEVELOPER_TOKEN
+
+# Optional: Login Customer ID (MCC account ID without dashes)
+# Recommended for accounts under an MCC
+# Example: 1234567890
+# login_customer_id: YOUR_LOGIN_CUSTOMER_ID

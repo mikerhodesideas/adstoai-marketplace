@@ -1,0 +1,18 @@
+{
+  "account_key_1": {
+    "id": "1234567890",
+    "aliases": ["Main Account", "main", "primary"],
+    "name": "My Business Name",
+    "currency": "USD",
+    "timezone": "America/New_York",
+    "notes": "Primary account for business operations"
+  },
+  "account_key_2": {
+    "id": "9876543210",
+    "aliases": ["Client ABC", "abc", "client1"],
+    "name": "ABC Corporation",
+    "currency": "GBP",
+    "timezone": "Europe/London",
+    "notes": "Client account - UK market"
+  }
+}

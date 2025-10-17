@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "google-ads": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "/REPLACE/WITH/YOUR/PATH/google_ads_mcp",
+        "-m",
+        "ads_mcp.server"
+      ],
+      "cwd": "/REPLACE/WITH/YOUR/PATH/google_ads_mcp",
+      "timeout": 30000,
+      "description": "Google Ads API MCP server - provides access to Google Ads data"
+    }
+  }
+}

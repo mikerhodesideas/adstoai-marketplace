@@ -1,21 +1,33 @@
 {
   "name": "google-ads-mcp",
-  "description": "Google Ads MCP integration with Agent Skills for campaign analysis, GAQL queries, and account management. Provides ready-to-use skills for working with Google Ads data through the MCP server.",
-  "version": "1.1.0",
+  "description": "Complete Google Ads integration for Claude Code - includes MCP server, commands, skills, and agents for Google Ads analysis",
+  "version": "1.0.0",
   "author": {
     "name": "Mike Rhodes",
-    "email": "mike@8020agent.com",
+    "email": "hello@mikerhodes.com.au",
     "url": "https://8020agent.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mikerhodesideas/adstoai-marketplace"
+    "url": "https://github.com/your-org/google-ads-mcp"
   },
   "keywords": [
     "google-ads",
-    "mcp",
-    "marketing",
     "analytics",
-    "gaql"
-  ]
+    "marketing",
+    "ppc",
+    "advertising",
+    "mcp",
+    "reporting"
+  ],
+  "capabilities": {
+    "mcp": true,
+    "commands": true,
+    "skills": true,
+    "agents": true
+  },
+  "requirements": {
+    "python": ">=3.12",
+    "tools": ["uv"]
+  }
 }
