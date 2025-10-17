@@ -72,6 +72,8 @@ Ask questions like:
 
 [Full Documentation →](./plugins/google-ads-mcp/README.md)
 
+**Note:** The plugin includes the full MCP server - no separate MCP installation required!
+
 ## Coming Soon
 
 - **Scripts Helper** - Google Ads Scripts management tools

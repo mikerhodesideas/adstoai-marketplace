@@ -9,8 +9,8 @@
   "plugins": [
     {
       "name": "google-ads-mcp",
-      "source": "./google-ads-mcp",
-      "description": "Agent Skills for Google Ads MCP: account management, campaign performance analysis, and GAQL query building"
+      "source": "./plugins/google-ads-mcp",
+      "description": "Complete Google Ads integration - MCP server, commands, skills, and agents for Google Ads automation"
     }
   ]
 }
