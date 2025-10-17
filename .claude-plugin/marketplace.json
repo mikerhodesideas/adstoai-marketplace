@@ -1,16 +1,38 @@
 {
   "name": "adstoai-marketplace",
-  "description": "Claude Code plugins for Google Ads professionals. Tools for campaign analysis, reporting, and automation through MCP integration.",
   "owner": {
     "name": "Mike Rhodes",
     "email": "mike@8020agent.com",
     "url": "https://8020agent.com"
   },
+  "metadata": {
+    "description": "Official AdstoAI marketplace for Google Ads automation and AI tools",
+    "version": "1.0.0",
+    "homepage": "https://8020agent.com",
+    "pluginRoot": "./plugins"
+  },
   "plugins": [
     {
       "name": "google-ads-mcp",
       "source": "./plugins/google-ads-mcp",
-      "description": "Complete Google Ads integration - MCP server, commands, skills, and agents for Google Ads automation"
+      "description": "Complete Google Ads integration - MCP server, commands, skills, and agents for Google Ads automation",
+      "version": "1.0.0",
+      "author": {
+        "name": "Mike Rhodes",
+        "email": "hello@mikerhodes.com.au",
+        "url": "https://8020agent.com"
+      },
+      "keywords": [
+        "google-ads",
+        "analytics",
+        "marketing",
+        "ppc",
+        "advertising",
+        "mcp",
+        "reporting"
+      ],
+      "category": "analytics",
+      "featured": true
     }
   ]
 }
