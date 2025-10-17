@@ -1,6 +1,6 @@
 # AdstoAI Marketplace
 
-Official plugin marketplace for AdstoAI community members - Google Ads automation and AI tools for Claude Code.
+Official plugin marketplace for [AdstoAI](https://8020agent.com/ai) members - Google Ads automation and AI tools for Claude Code.
 
 ## Quick Start
 
