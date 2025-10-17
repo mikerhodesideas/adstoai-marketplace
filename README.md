@@ -7,7 +7,7 @@ Official plugin marketplace for AdstoAI community members - Google Ads automatio
 ### Add the Marketplace
 
 ```bash
-/plugin marketplace add https://github.com/mikerhodesideas/ads2ai-marketplace
+/plugin marketplace add https://github.com/mikerhodesideas/adstoai-marketplace
 ```
 
 ### Install Plugins
@@ -76,7 +76,6 @@ Ask questions like:
 
 ## Support
 
-- **Community:** AdstoAI Discord
 - **Documentation:** [8020agent.com](https://8020agent.com)
 - **Issues:** [GitHub Issues](https://github.com/mikerhodesideas/adstoai-marketplace/issues)
 
