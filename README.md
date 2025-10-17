@@ -77,7 +77,8 @@ Ask questions like:
 ## Support
 
 - **Documentation:** [8020agent.com](https://8020agent.com)
-- **Issues:** [GitHub Issues](https://github.com/mikerhodesideas/adstoai-marketplace/issues)
+- **Community Support:** [Ask in Circle](https://mikerhodes.circle.so/c/ai-questions/)
+- **Join AdstoAI:** [8020agent.com/ai](https://8020agent.com/ai)
 
 ## For Plugin Developers
 
